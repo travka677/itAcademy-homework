@@ -10,17 +10,19 @@ public class Task8 {
         String[] cards = { "Jack", "Queen", "King", "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
 
         String[] deck = new String[suits.length * cards.length];
-        int index = 0;
 
-        for (int i = 0; i < suits.length; i++) {
-            for (int j = 0; j < cards.length; j++) {
-                deck[index++] = suits[i] + " of " + cards[j];
+        for (int i = 0; i < cards.length; i++) {
+            for (int j = 0; j < suits.length; j++) {
+                deck[suits.length * i + j] = suits[j] + " of " + cards[i];
             }
         }
 
         for (int i = 0; i < deck.length; i++) {
-            int randIndex = (int)(Math.random() * deck.length);
-            deck[i] = deck[randIndex];
+            // смысл в том, что рандомная карта выбирается из тех карт, которые еще не выбирались
+            int r = i + (int)(Math.random() * (deck.length-i));
+            String temp = deck[i];
+            deck[i] = deck[r];
+            deck[r] = temp;
         }
 
         for (int i = 0; i < deck.length; i++) {
