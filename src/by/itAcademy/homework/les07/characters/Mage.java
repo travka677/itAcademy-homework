@@ -11,7 +11,7 @@ Mage накапливает ульту и его способность закл
  */
 
 public class Mage extends Hero implements ManaAPI {
-    private Mana mana;
+    private final Mana mana;
     private final int HEALTH_TO_DECREASE;
 
     public Mage(String name, Health health, int damage, Mana mana, int HEALTH_TO_DECREASE) {

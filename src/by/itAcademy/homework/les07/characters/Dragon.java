@@ -5,7 +5,7 @@ import by.itAcademy.homework.les07.characteristics.Mana;
 import by.itAcademy.homework.les07.interfaces.ManaAPI;
 
 public class Dragon extends Enemy implements ManaAPI {
-    private Mana mana;
+    private final Mana mana;
     private final int DAMAGE_TO_ULT;
 
     public Dragon(String name, Health health, int damage, Mana mana, int DAMAGE_TO_ULT) {

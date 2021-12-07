@@ -5,7 +5,7 @@ import by.itAcademy.homework.les07.characteristics.Mana;
 import by.itAcademy.homework.les07.interfaces.ManaAPI;
 
 public class Archer extends Hero implements ManaAPI {
-    private Mana mana;
+    private final Mana mana;
     private final int FREEZE_TIME;
 
     public Archer(String name, Health health, int damage, Mana mana, int FREEZE_TIME) {

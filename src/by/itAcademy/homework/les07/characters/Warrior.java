@@ -8,7 +8,7 @@ import by.itAcademy.homework.les07.stuff.Shield;
 У Warrior есть щит
  */
 public class Warrior extends Hero {
-    private Shield shield;
+    private final Shield shield;
 
     public Warrior(String name, Health health, int damage, Shield shield) {
         super(name, health, damage);
