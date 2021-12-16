@@ -22,4 +22,17 @@ public class Rectangle extends Quadrangle {
     public double calculateHeight() {
         return getSideA();
     }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+
+        return builder.append("[ ").
+                append(getClass().getName()).
+                append(" { sideA = ").
+                append(getSideA()).
+                append(", sideB = ").
+                append(getSideB()).
+                append(" } ]").toString();
+    }
 }

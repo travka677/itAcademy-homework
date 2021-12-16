@@ -33,7 +33,6 @@ public class IsoscelesTriangle extends Triangle {
                 append(getSideB()).
                 append(", sideC = ").
                 append(getSideC()).
-                append(", height = ").
                 append(" } ]").toString();
     }
 }

@@ -1,7 +1,5 @@
 package by.itAcademy.homework.les08.shapes;
 
-import by.itAcademy.homework.les08.shapes.Triangle;
-
 public class VersatileTriangle extends Triangle {
 
     public VersatileTriangle(double sideA, double sideB, double sideC) {
@@ -17,5 +15,20 @@ public class VersatileTriangle extends Triangle {
         double c = getSideC();
 
         return (2 / a) * (Math.sqrt(p* (p - a) * (p - b) * (p - c)));
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+
+        return builder.append("[ ").
+                append(getClass().getName()).
+                append(" { sideA = ").
+                append(getSideA()).
+                append(", sideB = ").
+                append(getSideB()).
+                append(", sideC = ").
+                append(getSideC()).
+                append(" } ]").toString();
     }
 }

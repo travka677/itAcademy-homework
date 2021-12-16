@@ -2,8 +2,10 @@ package by.itAcademy.homework.les08.shapes;
 
 public class RightTriangle extends Triangle {
 
-    public RightTriangle(double sideA, double sideB, double sideC) {
-        super(sideA, sideB, sideC);
+    // Прямоугольгый треугольник задается двумя катетами по умолчанию
+    public RightTriangle(double sideA, double sideB) {
+        super(sideA, sideB);
+        setSideC(Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2)));
     }
 
     @Override
@@ -17,5 +19,20 @@ public class RightTriangle extends Triangle {
         double b = getSideB();
 
         return (a * b) / (Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2)));
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+
+        return builder.append("[ ").
+                append(getClass().getName()).
+                append(" { sideA = ").
+                append(getSideA()).
+                append(", sideB = ").
+                append(getSideB()).
+                append(", sideC = ").
+                append(String.format("%.2f", getSideC())).
+                append(" } ]").toString();
     }
 }

@@ -41,7 +41,7 @@ public class Test {
         System.out.println(triangle0.calculateArea());
         System.out.println(triangle0.calculateHeight());
 
-        Triangle triangle1 = new RightTriangle(3,8, 6);
+        Triangle triangle1 = new RightTriangle(3,8);
         System.out.println(triangle1.calculatePerimeter());
         System.out.println(triangle1.calculateArea());
         System.out.println(triangle0.compareAreas(triangle1));
@@ -60,7 +60,12 @@ public class Test {
         System.out.println(quadrangle1.compareAreas(quadrangle2));
 
         System.out.println(ShapeUtils.isTriangle(triangle2));
+        System.out.println(ShapeUtils.isQuadrangle(triangle0));
 
+        System.out.println(quadrangle2);
         System.out.println(triangle2);
+        System.out.println(triangle1);
+        System.out.println(quadrangle1);
+        System.out.println(triangle0);
     }
 }
