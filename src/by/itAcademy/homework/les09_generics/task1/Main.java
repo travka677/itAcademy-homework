@@ -1,6 +1,6 @@
-package by.itAcademy.homework.les09.task1;
+package by.itAcademy.homework.les09_generics.task1;
 
-import by.itAcademy.homework.les09.task2.PairUtil;
+import by.itAcademy.homework.les09_generics.task2.PairUtil;
 
 public class Main {
     public static void main(String[] args) {
