@@ -1,4 +1,4 @@
-package by.itAcademy.homework.les09_generics.task1;
+package by.itAcademy.homework.les09_generic.task1;
 /*
 1.	Создать класс Pair, параметризованный двумя параметрами K и V.
 Класс должен хранить две переменные типов K и V соответственно.

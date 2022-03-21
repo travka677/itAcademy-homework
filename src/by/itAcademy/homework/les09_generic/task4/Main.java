@@ -1,4 +1,4 @@
-package by.itAcademy.homework.les09_generics.task4;
+package by.itAcademy.homework.les09_generic.task4;
 
 public class Main {
     public static void main(String[] args) {

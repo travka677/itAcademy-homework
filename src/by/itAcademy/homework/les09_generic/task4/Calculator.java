@@ -1,4 +1,4 @@
-package by.itAcademy.homework.les09_generics.task4;
+package by.itAcademy.homework.les09_generic.task4;
 /*
 4.	Из задания 5.3 реализовать класс вычислитель для вещественных и целых типов данных, используя параметризацию классов.
  */

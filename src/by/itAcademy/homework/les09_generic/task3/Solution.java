@@ -1,4 +1,4 @@
-package by.itAcademy.homework.les09_generics.task3;
+package by.itAcademy.homework.les09_generic.task3;
 /*
 3.	Дан класс Solution, параметризированный T. Ограничьте параметр T.
 T должен быть наследником класса ClassForGenerics и одновременно реализовывать интерфейс InterfaceForGenerics.
